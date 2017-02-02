@@ -13,8 +13,7 @@ public class MessageList {
         allmsgs.add(this);
         sortMessageList();
     }
-    public void add(Message a){
-        msgs.add(a);
+    public void add(Message a){msgs.add(a);
     }
     public void sortMessageList(){
         for(int i = 0; i < allmsgs.size(); i++){
@@ -60,7 +59,7 @@ public class MessageList {
     }
     public void printMessages(){
         for(int i = 0; i < msgs.size(); i++){
-            System.out.println(msgs.get(i).message);
+            System.out.println(msgs.get(i).message + "\t" + i);
         }
     }
 }

@@ -6,7 +6,6 @@ public class Message {
     public final Date dateReceived;
     public final String number, message;
     public final long timeReceived;
-    public MessageList a;
     public Message(String n, String m){
         dateReceived = new Date();
         number = n;
@@ -15,13 +14,8 @@ public class Message {
         timeReceived = dateReceived.getTime();
         for(int i = 0; i < MessageList.allmsgs.size(); i++){
             if(this.number.equals(MessageList.allmsgs.get(i).number)){
-                MessageList.allmsgs.get(i).add(this);
                 MessageList.allmsgs.get(i).sortMessages();
-                exist = true;
             }
-        }
-        if(!exist){
-            a = new MessageList(this);
         }
     }
 }
