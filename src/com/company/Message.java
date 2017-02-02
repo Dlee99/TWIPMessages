@@ -6,6 +6,7 @@ public class Message {
     public final Date dateReceived;
     public final String number, message;
     public final long timeReceived;
+    public MessageList a;
     public Message(String n, String m){
         dateReceived = new Date();
         number = n;
@@ -20,7 +21,7 @@ public class Message {
             }
         }
         if(!exist){
-            new MessageList(this);
+            a = new MessageList(this);
         }
     }
 }
