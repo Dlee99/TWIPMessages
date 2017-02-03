@@ -10,12 +10,11 @@ public class Message {
         dateReceived = new Date();
         number = n;
         message = m;
-        boolean exist = false;
         timeReceived = dateReceived.getTime();
-        for(int i = 0; i < MessageList.allmsgs.size(); i++){
+        /*for(int i = 0; i < MessageList.allmsgs.size(); i++){
             if(this.number.equals(MessageList.allmsgs.get(i).number)){
-                MessageList.allmsgs.get(i).sortMessages();
+                MessageList.allmsgs.get(i).add(this);
             }
-        }
+        }*/
     }
 }
