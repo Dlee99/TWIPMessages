@@ -87,7 +87,7 @@ public class Main {
             if (!e && m.equalsIgnoreCase("numbers")) {
                 e = true;
                 for (int i = 0; i < MessageList.allmsgs.size(); i++) {
-                    System.out.print(MessageList.allmsgs.get(i).number);
+                    System.out.println(MessageList.allmsgs.get(i).number);
                 }
             }
             if (!e) {
