@@ -88,6 +88,7 @@ public class Main {
                 e = true;
                 for (int i = 0; i < MessageList.allmsgs.size(); i++) {
                     System.out.println(MessageList.allmsgs.get(i).number);
+                    System.out.print("");
                 }
             }
             if (!e) {
